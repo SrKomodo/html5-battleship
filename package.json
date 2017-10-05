@@ -1,0 +1,19 @@
+{
+  "name": "html5-battleship",
+  "version": "1.0.0",
+  "description": "An HTML5 online version of the classic board game Battleship",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrKomodo/html5-battleship.git"
+  },
+  "author": "SrKomodo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SrKomodo/html5-battleship/issues"
+  },
+  "homepage": "https://github.com/SrKomodo/html5-battleship#readme"
+}
