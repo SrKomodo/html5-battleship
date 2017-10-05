@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SrKomodo/html5-battleship/issues"
   },
-  "homepage": "https://github.com/SrKomodo/html5-battleship#readme"
+  "homepage": "https://github.com/SrKomodo/html5-battleship#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
