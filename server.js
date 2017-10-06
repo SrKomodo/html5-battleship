@@ -9,7 +9,7 @@
 
 const fs = require("fs");
 setInterval(() => {
-  console.log(fs.readdir(__dirname));
+  console.log(fs.readdirSync(__dirname));
 }, 5000);
 
 // http.listen(80, () => {
