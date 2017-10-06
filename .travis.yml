@@ -10,7 +10,7 @@ branches:
 cache:
   directories:
     - "node_modules"
-before_deploy: "grep -Fv \"public\" .gitignore > .gitnignore"
+before_deploy: "grep -Fv \"public\" .gitignore > .gitignore"
 deploy:
   provider: azure_web_apps
   site: html5-battleship
