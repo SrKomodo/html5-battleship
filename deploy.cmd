@@ -113,6 +113,11 @@ IF EXIST "Gulpfile.js" (
   popd
 )
 
+pushd "%DEPLOYMENT_TARGET%"
+call gid add public -f
+IF !ERRORLEVEL! NEQ 0 goto error
+popd
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
 
