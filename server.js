@@ -9,7 +9,10 @@ const io = require("socket.io")(http);
 
 const fs = require("fs");
 fs.readdir(__dirname, (err, files) => {
-  if (err) throw err;
+  if (err) {
+    console.log(err);
+    throw err;
+  }
   setInterval(() => {
     console.log("test");
     require("util").inspect(files);
