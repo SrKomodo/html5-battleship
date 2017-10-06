@@ -10,6 +10,7 @@ branches:
 cache:
   directories:
     - "node_modules"
+before_deploy: "npm run git"
 deploy:
   provider: azure_web_apps
   site: html5-battleship
