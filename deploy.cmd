@@ -108,7 +108,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 :: 4. Run gulp
 IF EXIST "Gulpfile.js" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! run build --production
+  call .\node_modules\.bin\gulp build --release
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
