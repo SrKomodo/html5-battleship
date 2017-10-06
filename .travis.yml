@@ -13,6 +13,7 @@ cache:
 before_deploy:
   - "git add .gitignore"
   - "sed -i '/public/d' .gitignore"
+  - "git add .gitignore"
   - "git add public"
 deploy:
   provider: azure_web_apps
