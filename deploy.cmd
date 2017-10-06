@@ -110,7 +110,8 @@ IF EXIST "Gulpfile.js" (
   pushd "%DEPLOYMENT_TARGET%"
   call .\node_modules\.bin\gulp build --release
   IF !ERRORLEVEL! NEQ 0 goto error
-  call git add public -f
+  call :ExecuteCmd git add public -f
+  IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
 
