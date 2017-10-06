@@ -114,7 +114,7 @@ IF EXIST "Gulpfile.js" (
 )
 
 pushd "%DEPLOYMENT_TARGET%"
-call gid add public -f
+call git add public -f
 IF !ERRORLEVEL! NEQ 0 goto error
 popd
 
