@@ -10,8 +10,9 @@ branches:
 cache:
   directories:
     - "node_modules"
-before_deploy: "sed -i '/public/d' .gitignore"
+before_deploy:
+  - "sed -i '/public/d' .gitignore"
+  - "git add .gitignore public"
 deploy:
-  skip_cleanup: true
   provider: azure_web_apps
   site: html5-battleship
