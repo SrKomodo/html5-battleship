@@ -15,6 +15,7 @@ before_deploy:
   - "sed -i '/public/d' .gitignore"
   - "git add .gitignore"
   - "git add public"
+  - "git add .gitignore"
 deploy:
   provider: azure_web_apps
   site: html5-battleship
