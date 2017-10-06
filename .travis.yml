@@ -11,5 +11,6 @@ cache:
   directories:
     - "node_modules"
 before_deploy: "sed '/public/d' .gitignore"
+deploy:
   provider: azure_web_apps
   site: html5-battleship
