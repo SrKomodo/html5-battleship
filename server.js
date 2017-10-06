@@ -8,9 +8,10 @@
 // const io = require("socket.io")(http);
 
 const fs = require("fs");
-setInterval(() => {
-  console.log(fs.readdirSync(__dirname));
-}, 5000);
+fs.readdir(__dirname, (err, files) => {
+  if (err) throw err;
+  require("util").inspect(files);
+});
 
 // http.listen(80, () => {
 //   console.log("app started on port 80");
