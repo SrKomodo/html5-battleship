@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp watch && node index.js",
     "build": "gulp build --release",
-    "git": "git add public"
+    "git": "git add public index.js process.json package.json"
   },
   "repository": {
     "type": "git",
