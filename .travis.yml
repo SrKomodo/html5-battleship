@@ -11,7 +11,7 @@ cache:
   directories:
     - "node_modules"
 before_deploy:
-  # - "git add .gitignore -f"
+  ## - "git add .gitignore -f"
   - "sed -i '/public/d' .gitignore"
   - "git add public -f"
 deploy:
