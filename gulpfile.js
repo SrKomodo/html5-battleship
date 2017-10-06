@@ -13,7 +13,7 @@ const htmlmin = require("gulp-htmlmin");
 const release = process.argv[3] === "--release";
 
 gulp.task("js", () => {
-  return gulp.src(["src/**/*.js", "!src/modules/*.js"], { read: false })
+  return gulp.src("src/script.js", { read: false })
     .pipe(tap(function (file) {
       gutil.log("bundling " + file.path);
       file.contents = browserify(file.path, { debug: !release })
