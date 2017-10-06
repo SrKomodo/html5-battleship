@@ -38,7 +38,7 @@ gulp.task("html", () => {
     .pipe(gulp.dest("public"));
 });
 
-gulp.task("build", ["js", "css", "html", "media"]);
+gulp.task("build", ["js", "css", "html"]);
 gulp.task("default", ["build"]);
 
 gulp.task("watch", ["build"], () => {
