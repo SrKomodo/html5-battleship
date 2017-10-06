@@ -1,0 +1,16 @@
+language: node_js 
+node_js: 
+  - "7" 
+before_script: 
+  - npm install -g gulp-cli 
+script: npm run build 
+branches: 
+  only: 
+  - master 
+cache: 
+  directories: 
+    - "node_modules" 
+before_deploy: "git add public -f" 
+deploy: 
+  provider: azure_web_apps 
+  site: html5-battleship

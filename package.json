@@ -4,7 +4,7 @@
   "description": "An HTML5 online version of the classic board game Battleship",
   "main": "server.js",
   "scripts": {
-    "watch": "gulp watch node server.js",
+    "watch": "gulp watch && node server.js",
     "build": "gulp build --release"
   },
   "repository": {
