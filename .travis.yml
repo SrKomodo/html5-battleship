@@ -11,11 +11,9 @@ cache:
   directories:
     - "node_modules"
 before_deploy:
-  - "git add .gitignore -f"
+  # - "git add .gitignore -f"
   - "sed -i '/public/d' .gitignore"
-  - "git add .gitignore -f"
-  - "git add public"
-  - "git add .gitignore -f"
+  - "git add public -f"
 deploy:
   provider: azure_web_apps
   site: html5-battleship
