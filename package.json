@@ -2,9 +2,9 @@
   "name": "html5-battleship",
   "version": "1.0.0",
   "description": "An HTML5 online version of the classic board game Battleship",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "watch": "gulp watch node server.js",
     "build": "gulp build --release"
   },
   "repository": {
