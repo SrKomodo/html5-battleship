@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - "7"
-before_script:
-  - npm install -g gulp-cli
 script: npm run build
 branches:
   only:
@@ -15,6 +13,6 @@ before_deploy:
   - "git add .gitignore public -f"
   - "rm -r node_modules"
 deploy:
-  skip_cleanup: true
   provider: azure_web_apps
   site: html5-battleship
+  skip_cleanup: true
