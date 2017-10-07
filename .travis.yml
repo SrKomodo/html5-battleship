@@ -12,7 +12,7 @@ cache:
     - "node_modules"
 before_deploy:
   - "sed -i '/public/d' .gitignore"
-  - "git add public -f"
+  - "git add .gitignore public -f"
   - "rm -r node_modules"
 deploy:
   skip_cleanup: true
