@@ -9,7 +9,6 @@ cache:
   directories:
     - "node_modules"
 before_deploy:
-  - "git stash pop"
   - "sed -i '/public/d' .gitignore"
   - "git add .gitignore public -f"
   - "rm -r node_modules"
