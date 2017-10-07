@@ -13,6 +13,7 @@ cache:
 before_deploy:
   - "sed -i '/public/d' .gitignore"
   - "git add public -f"
+  - "rm -r node_modules"
 deploy:
   skip_cleanup: true
   provider: azure_web_apps
